@@ -44,4 +44,5 @@ img {
 
 .wrapper {
     min-height: calc(100vh - 304px);
+    position: relative;
 }

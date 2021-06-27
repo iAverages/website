@@ -55,15 +55,14 @@ const Footer: React.FC = () => {
 
     return (
         <div className={styles.wrapper}>
+            <Left />
             {swapOrder ? (
                 <>
-                    <Left />
                     <Right />
                     <Center />
                 </>
             ) : (
                 <>
-                    <Left />
                     <Center />
                     <Right />
                 </>

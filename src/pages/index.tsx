@@ -5,7 +5,7 @@ import About from "./About";
 import Footer from "../components/Footer";
 import "../styles/global.css";
 
-function Main() {
+const Main: React.FC = () => {
     return (
         <>
             <div className={"wrapper"}>
@@ -17,10 +17,9 @@ function Main() {
                     <Route path="*" component={() => <Error error="404 Not found" />} />
                 </Switch>
             </div>
-
             <Footer />
         </>
     );
-}
+};
 
 export default Main;

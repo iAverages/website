@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
                 <Link href={"https://github.com/iAverages"} label={"Github"} newTab />
                 <Link href={"https://paste.danielraybone.com/"} label={"Hastebin"} newTab />
                 <Link href={"https://status.danielraybone.com/"} label={"Status"} newTab />
-                <Link href={"https://status.danielraybone.com/"} label={"Discord"} newTab />
+                <Link href={"http://discord.gg/JM3N5ws"} label={"Discord"} newTab />
             </div>
         </div>
     );

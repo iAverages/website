@@ -1,0 +1,32 @@
+.wrapper {
+    left: 0;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    background-color: #2e2e2e;
+    color: #fff;
+    border-top: 4px solid var(--primary);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    -webkit-box-shadow: -11px 0 69px -22px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -11px 0 69px -22px rgba(0, 0, 0, 0.75);
+    box-shadow: -11px 0 69px -22px rgba(0, 0, 0, 0.75);
+    height: 250px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    margin: 0 10rem;
+}
+
+.right {
+}
+
+.links {
+    display: inline;
+}

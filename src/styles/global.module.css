@@ -2,9 +2,11 @@
 
 :root {
     --primary: #633194;
+    --primary-light: #9c3eba;
     --secondary: #333333;
     --background: #262626;
     --text: #d1d1d1;
+    --text-darker: #b8b8b8;
 }
 
 body {

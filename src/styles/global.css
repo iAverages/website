@@ -41,3 +41,7 @@ img {
     /* height: auto; */
     object-fit: cover;
 }
+
+.wrapper {
+    min-height: calc(100vh - 304px);
+}

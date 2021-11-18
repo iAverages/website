@@ -11,7 +11,6 @@ const Footer: React.FC = () => {
         <div id={styles.left} className={styles.column}>
             <h3 className={styles.header}>External</h3>
             <div className={styles.links}>
-                <Link href={"https://secure-heaven.com/"} label={"Secure Heaven"} newTab />
                 <Link href={"https://github.com/iAverages"} label={"Github"} newTab />
                 <Link href={"https://paste.danielraybone.com/"} label={"Hastebin"} newTab />
                 <Link href={"https://status.danielraybone.com/"} label={"Status"} newTab />
@@ -34,21 +33,9 @@ const Footer: React.FC = () => {
             <h3 className={styles.header}>Public Projects</h3>
             <div className={styles.links}>
                 <Link href={"https://github.com/iAverages/Yin"} label={"Yin Bot"} newTab />
-                <Link
-                    href={"https://github.com/iAverages/ImageUploadAPI"}
-                    label={"Image Upload API"}
-                    newTab
-                />
-                <Link
-                    href={"https://github.com/iAverages/SkinsAPI"}
-                    label={"Minecraft Skins API"}
-                    newTab
-                />
-                <Link
-                    href={"https://github.com/iAverages/website"}
-                    label={"Website Source"}
-                    newTab
-                />
+                <Link href={"https://github.com/iAverages/ImageUploadAPI"} label={"Image Upload API"} newTab />
+                <Link href={"https://github.com/iAverages/SkinsAPI"} label={"Minecraft Skins API"} newTab />
+                <Link href={"https://github.com/iAverages/website"} label={"Website Source"} newTab />
             </div>
         </div>
     );

@@ -7,6 +7,7 @@
     --background: #262626;
     --text: #d1d1d1;
     --text-darker: #b8b8b8;
+    --page-padding: 1rem;
 }
 
 body {
@@ -43,6 +44,7 @@ img {
 }
 
 .wrapper {
-    min-height: calc(100vh - 304px);
+    min-height: calc(100vh - 304px - calc(var(--page-padding) * 2));
     position: relative;
+    padding: var(--page-padding);
 }

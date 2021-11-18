@@ -7,14 +7,11 @@ interface ErrorProps {
 
 const Error: React.FC<ErrorProps> = ({ error = "An error has occured" }) => {
     return (
-        <div>
+        <>
             <div className={styles.error}>
                 <div className={styles.messageWrapper}>
                     <p className={styles.message}>
-                        <FontAwesomeIcon
-                            className={styles.icon}
-                            icon={["fas", "exclamation-circle"]}
-                        />
+                        <FontAwesomeIcon className={styles.icon} icon={["fas", "exclamation-circle"]} />
                         {error}
                     </p>
                 </div>
@@ -22,7 +19,7 @@ const Error: React.FC<ErrorProps> = ({ error = "An error has occured" }) => {
                     <img className={styles.yin} src={"/images/yin_cry.png"} alt={"Sad Yin"} />
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

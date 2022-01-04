@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
-import Main from "./pages";
-import "./icons";
+import "./global.css";
 
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter>
-            <Main />
-        </BrowserRouter>
+        <div className={"wrapper"}>
+            <p>This site is work in progress!</p>
+            <p>Enjoy this gif instead :)</p>
+            <img alt="gif" src="https://c.tenor.com/r9TC5OqhdQYAAAAC/siesta-tantei-wa-mou-shindeiru.gif" />
+        </div>
     </React.StrictMode>,
     document.getElementById("root")
 );

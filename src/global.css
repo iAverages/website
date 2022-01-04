@@ -47,4 +47,8 @@ img {
     min-height: calc(100vh - 304px - calc(var(--page-padding) * 2));
     position: relative;
     padding: var(--page-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

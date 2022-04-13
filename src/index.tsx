@@ -36,7 +36,7 @@ ReactDOM.render(
                         <a href="https://nishtha.biz/">Nishtha</a>
                     </p>
                     <p>
-                        In my spare time I try to work in various projects, Izanami (Game server control panel), Yin (A Micro
+                        In my spare time I try to work on various projects, Izanami (Game server control panel), Yin (A Micro
                         Services Discord Bot built with Typescript, MongoDB and Redis)
                     </p>
                 </section>

@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="awesome">
+    <style is:inline>
+        /* I dont use tailwind here as I do not know how do this with it */
+        #tiles {
+            grid-template-columns: repeat(var(--columns), 1fr);
+            grid-template-rows: repeat(var(--rows), 1fr);
+        }
+
+        /* Tiles are created in JS */
+        .tile {
+            cursor: pointer;
+            position: relative;
+            gap: 5px;
+            background-color: rgb(15, 15, 15);
+        }
+
+        .tile:hover {
+            background-color: rgb(30, 30, 30);
+        }
+    </style>
+    <div>
+        <div class="absolute inset-auto text-center w-full h-full flex items-center justify-center">
+            <h1 class="z-20 text-white pointer-events-none text-[6vw]">Hello 👋</h1>
+        </div>
+
+        <div id="tiles" class="w-screen h-screen relative z-10 grid gap-[1px]"></div>
+    </div>
+</Layout>
+
+<script>
+    // @ts-ignore - I have the types installed :v
+    import anime from "animejs";
+    const wrapper = document.getElementById("tiles");
+
+    let columns = 0;
+    let rows = 0;
+    let toggled = false;
+
+    const onClick = (idx: number) => {
+        toggled = !toggled;
+        anime({
+            targets: ".tile",
+            opacity: toggled ? 0 : 1,
+            delay: anime.stagger(50, {
+                grid: [columns, rows],
+                from: idx,
+            }),
+        });
+    };
+
+    const createTiles = () => {
+        if (!wrapper) {
+            console.error("Failed to find tile wrapper");
+            return;
+        }
+        // Clear innerHTML on resizing
+        wrapper.innerHTML = "";
+        columns = Math.floor(document.body.clientWidth / 50);
+        rows = Math.floor(document.body.clientHeight / 50);
+
+        wrapper.style.setProperty("--columns", `${columns}`);
+        wrapper.style.setProperty("--rows", `${rows}`);
+
+        Array.from(Array(columns * rows)).map((_, idx) => {
+            const tile = document.createElement("div");
+            tile.classList.add("tile");
+            tile.style.opacity = toggled ? "0" : "1";
+            tile.addEventListener("click", () => onClick(idx));
+            wrapper.appendChild(tile);
+        });
+    };
+
+    createTiles();
+    window.onresize = () => createTiles();
+</script>

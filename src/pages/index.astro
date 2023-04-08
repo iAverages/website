@@ -3,28 +3,45 @@ import Subtitle from "../components/Subtitle.astro";
 import Layout from "../layouts/Layout.astro";
 import Text from "../components/Text.astro";
 import Link from "../components/Link.astro";
+import Project from "../components/Project.astro";
 ---
 
 <Layout title="Daniel Raybone">
     <main class="grid p-4 justify-center">
-        <div class="max-w-2xl">
+        <div class="max-w-3xl">
             <h1 class="py-4 font-extrabold text-6xl">Hello 👋</h1>
             <section>
-                <Text>
-                    My name is Daniel Raybone, a self taught software developer from the UK, currently studying T-Level
-                    Digital Production, Design & Development.
-                </Text>
+                <Text>My name is Daniel Raybone, a self taught software developer from the UK.</Text>
             </section>
             <section>
                 <Subtitle>What Do I Do?</Subtitle>
-                <Text>Currently I am focusing on college and work.</Text>
                 <Text>
-                    In my spare time I try to work on various projects:
-                    <ul class="space-y-1 list-disc list-inside">
-                        <li>Yin, a micro services Discord Bot built with Typescript, Mongo and Redis</li>
-                        <li>Kurumi, a simple note taking app built with the T3 stack & Monaco editor</li>
-                        <li>Spirit, a minecraft plugin for logging events to InfluxDB</li>
-                        <li>Izanami, game server control panel</li>
+                    Currently I am focusing on work and some other projects that I am working on. I am also getting more
+                    into contributing to open source.
+                </Text>
+                <Text>
+                    <ul class="space-y-1 list-disc list-inside grid grid-cols-3 gap-3">
+                        <Project
+                            title="Yin"
+                            desc="A Micro Services Discord Bot built with Typescript, MySQL, RabbitMQ."
+                            href="https://github.com/iAverages/Yin"
+                        />
+                        <Project
+                            title="Kurumi"
+                            desc="A simple note taking app built with the T3 stack & Monaco editor"
+                            href="https://github.com/iAverages/Kurumi"
+                        />
+                        <Project
+                            title="avrg.dev"
+                            desc="Cloudflare Worker with proxy for b2 bucket & url shortener"
+                            href="https://github.com/iAverages/avrg.dev"
+                        />
+
+                        <Project
+                            title="create-t3-app"
+                            desc="Interactive CLI to start a full-stack, typesafe Next.js app."
+                            href="https://github.com/t3-oss/create-t3-app"
+                        />
                     </ul>
                 </Text>
             </section>

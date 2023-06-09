@@ -1,0 +1,47 @@
+---
+import Project from "./Project.astro";
+import Subtitle from "./Subtitle.astro";
+import Text from "./Text.astro";
+---
+
+<section>
+    <Subtitle>What Do I Do?</Subtitle>
+    <Text>
+        Currently I am focusing on work and some other projects that I am working on. I am also getting more into
+        contributing to open source.
+    </Text>
+    <Text>
+        <ul class="space-y-1 list-disc list-inside grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <Project
+                title="Yin"
+                desc="A Micro Services Discord Bot built with Typescript, MySQL, RabbitMQ."
+                href="https://github.com/iAverages/Yin"
+            />
+            <Project
+                title="Kurumi"
+                desc="A simple note taking app built with the T3 stack & Monaco editor"
+                href="https://github.com/iAverages/Kurumi"
+            />
+            <Project
+                title="avrg.dev"
+                desc="Cloudflare Worker with proxy for b2 bucket & url shortener"
+                href="https://github.com/iAverages/avrg.dev"
+            />
+            <Project
+                title="create-t3-app"
+                desc="Interactive CLI to start a full-stack, typesafe Next.js app."
+                href="https://github.com/t3-oss/create-t3-app"
+            />
+            <Project
+                title="joe"
+                desc="Top down 2D game about joe and his friends, built with Unity."
+                href="https://github.com/iAverages/joe2D"
+            />
+            <Project
+                title="kaori"
+                desc="Simple API to fetch the current song I am listening to on Spotify (Show below!)"
+                href="https://github.com/iAverages/kaori"
+            />
+        </ul>
+    </Text>
+</section>

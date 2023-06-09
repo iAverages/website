@@ -1,8 +1,8 @@
 <script lang="ts">
     import { createQuery } from "@tanstack/svelte-query";
     import { z } from "zod";
-    import Progress from "../Progress.svelte";
     import { onDestroy, afterUpdate } from "svelte";
+    import Player from "./Player.svelte";
 
     const playingNow = z.object({
         song: z.object({
@@ -33,6 +33,7 @@
     let canvas: HTMLCanvasElement;
 
     const updateCanvas = (d?: SpotifyStatus) => {
+        console.log("updateCanvas", canvas);
         if (!canvas) return;
         const data = d || $query.data;
         if (!data) return;
@@ -113,13 +114,6 @@
         clearInterval(interval);
     });
 
-    const msToMinuteSecond = (ms: number) => {
-        const seconds = Math.floor(ms / 1000);
-        const minutes = Math.floor(seconds / 60);
-        const remainingSeconds = seconds % 60;
-        return `${minutes}:${remainingSeconds < 10 ? "0" + remainingSeconds : remainingSeconds}`;
-    };
-
     afterUpdate(() => {
         updateCanvas();
     });
@@ -133,29 +127,28 @@
             <p>Error: {$query.error.message}</p>
         {:else if $query.isSuccess}
             {#if $query.data.is_playing}
-                <div class="w-full flex items-center bg-stone-800">
-                    <img src={$query.data.icon} alt="Artist" class="w-36 h-36" />
-                    <div class="w-full relative">
-                        <div class="absolute w-full h-full">
-                            <div class="flex flex-col justify-center h-full px-6">
-                                <p class="my-2 text-xl font-medium">
-                                    {$query.data.song.name} by {$query.data.song.artist.name}
-                                </p>
-                                <Progress progress={(localProgress / $query.data.song.duration) * 100} />
-                                <p>
-                                    {msToMinuteSecond(localProgress)} / {msToMinuteSecond($query.data.song.duration)}
-                                </p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="w-full h-32">
-                                <canvas bind:this={canvas} class="w-full h-full" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Player bind:canvas data={$query.data} {localProgress} />
             {:else}
-                <div>Not playing anything atm</div>
+                <Player
+                    bind:canvas
+                    data={{
+                        song: {
+                            name: "Nothing is playing",
+                            artist: {
+                                name: "Spotify",
+                                url: "https://open.spotify.com/",
+                            },
+                            duration: 0,
+                            url: "https://open.spotify.com/",
+                        },
+                        is_playing: false,
+                        progress: 0,
+                        playlist_url: "https://open.spotify.com/",
+                        icon: "https://cdn.danielraybone.com/assets/yin/yin-smile.gif",
+                        levels: [],
+                    }}
+                    localProgress={0}
+                />
             {/if}
         {/if}
     </div>

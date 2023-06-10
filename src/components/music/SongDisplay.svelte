@@ -73,7 +73,9 @@
         },
         queryFn: async () => {
             try {
-                const res = await fetch(import.meta.env.PUBLIC_KAORI_URL + "/api/player");
+                const res = await fetch(import.meta.env.PUBLIC_KAORI_URL + "/api/player", {
+                    mode: "no-cors",
+                });
                 const data = await res.json();
                 if (data.message) {
                     return { is_playing: false, message: data.message };

@@ -16,7 +16,7 @@
         }),
         is_playing: z.literal(true),
         progress: z.number(),
-        playlist_url: z.string(),
+        playlist_url: z.string().optional(),
         icon: z.string(),
         levels: z.array(z.number()),
     });

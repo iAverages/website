@@ -33,7 +33,6 @@
     let canvas: HTMLCanvasElement;
 
     const updateCanvas = (d?: SpotifyStatus) => {
-        console.log("updateCanvas", canvas);
         if (!canvas) return;
         const data = d || $query.data;
         if (!data) return;

@@ -820,17 +820,17 @@
     svelte-hmr "^0.16.0"
     vitefu "^0.2.5"
 
-"@tanstack/query-core@5.38.0":
-  version "5.38.0"
-  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-5.38.0.tgz#36e0cd309cdbd75b4ff3fa81cdb3839befc7d6f6"
-  integrity sha512-QtkoxvFcu52mNpp3+qOo9H265m3rt83Dgbw5WnNyJvr83cegrQ7zT8haHhL4Rul6ZQkeovxyWbXVW9zI0WYx6g==
+"@tanstack/query-core@5.40.0":
+  version "5.40.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-5.40.0.tgz#c74ae8303752ed4b5a0ab848ec71a0e6e8179f83"
+  integrity sha512-eD8K8jsOIq0Z5u/QbvOmfvKKE/XC39jA7yv4hgpl/1SRiU+J8QCIwgM/mEHuunQsL87dcvnHqSVLmf9pD4CiaA==
 
 "@tanstack/svelte-query@^5.0.0":
-  version "5.38.0"
-  resolved "https://registry.yarnpkg.com/@tanstack/svelte-query/-/svelte-query-5.38.0.tgz#bd2cec225803e832d955b07ad58b892afccdecac"
-  integrity sha512-29jg4mz5s0ZuIV4HUKEAd9rpgOsGq7DLzMBQRwYLQuTYulwT+ZitYYq6YL8n9t2pOk+kApz45DIOMywjpzi+3w==
+  version "5.40.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/svelte-query/-/svelte-query-5.40.0.tgz#2cdc0d523dc16995adb5f40e889d3ef3c62d8bcc"
+  integrity sha512-pxwIGx+UqkGDIqnZy8v7SBKeWZEZu6NLz8NS5FSJftOq/jV4A2xLLvyHUlxodNCNsn9YM6dFB2R3fQySoPzGbw==
   dependencies:
-    "@tanstack/query-core" "5.38.0"
+    "@tanstack/query-core" "5.40.0"
 
 "@types/babel__core@^7.20.5":
   version "7.20.5"

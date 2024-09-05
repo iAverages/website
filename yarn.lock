@@ -691,9 +691,9 @@
   integrity sha512-hKS+WRpT5zBFip21pB6Jx1C0hranWQrbv5EJ7qPoiV5MYI3C8rTCqWC9DdBseiPT1JgQWh8Y55YthuYZNiw3Xw==
 
 "@tanstack/svelte-query@^5.0.0":
-  version "5.54.1"
-  resolved "https://registry.yarnpkg.com/@tanstack/svelte-query/-/svelte-query-5.54.1.tgz#d5b04865b67e08f19ba8b190187e125dee30bc85"
-  integrity sha512-Vf2tkXj6a23gxm+vduzkm1anqH1rxj9HcYen1v9yNAzMAmBkWgGh5pcOTTj0D4Vdz1YpiP4RdbWAqlkPvHE17g==
+  version "5.54.2"
+  resolved "https://registry.yarnpkg.com/@tanstack/svelte-query/-/svelte-query-5.54.2.tgz#cab7fd6c5393357c34860fd4490a92d32a50b88d"
+  integrity sha512-f/0EcXNBhJ6oIKxlWhMwKT32H+rq1grBYNg1tXbDyeFThiOsQqaAbaB3Wco+V80uuaIP9FmKv84MAf4z7+1qlg==
   dependencies:
     "@tanstack/query-core" "5.54.1"
 

@@ -20,7 +20,12 @@
                 <p class="my-2 text-xl font-medium">
                     {data.song.name} by {data.song.artist.name}
                 </p>
-                <Progress progress={(localProgress / data.song.duration) * 100} />
+                <div>
+                    <div
+                        class="h-4 bg-[#7e22ce] rounded-full transition-all duration-150 ease-linear"
+                        style="width: {(localProgress / data.song.duration) * 100}%"
+                    />
+                </div>
                 <p>
                     {msToMinuteSecond(localProgress)} / {msToMinuteSecond(data.song.duration)}
                 </p>

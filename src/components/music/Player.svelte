@@ -1,7 +1,6 @@
 <script lang="ts">
     import Progress from "../Progress.svelte";
 
-    export let canvas: HTMLCanvasElement;
     export let data: any;
     export let localProgress: number;
 
@@ -25,11 +24,6 @@
                 <p>
                     {msToMinuteSecond(localProgress)} / {msToMinuteSecond(data.song.duration)}
                 </p>
-            </div>
-        </div>
-        <div>
-            <div class="w-full h-32">
-                <canvas bind:this={canvas} class="w-full h-full" />
             </div>
         </div>
     </div>

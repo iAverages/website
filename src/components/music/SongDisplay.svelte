@@ -18,7 +18,6 @@
         progress: z.number(),
         playlist_url: z.string().optional(),
         icon: z.string(),
-        levels: z.array(z.number()),
     });
 
     const paused = z.object({
@@ -30,46 +29,9 @@
     type MessageStatus = { message: string };
     type SpotifyStatus = PlayingNow | Paused;
 
-    let canvas: HTMLCanvasElement;
-
-    const updateCanvas = (d?: SpotifyStatus) => {
-        if (!canvas) return;
-        const data = d || $query.data;
-        if (!data) return;
-
-        if (!data.is_playing) return;
-        if (!canvas) return;
-
-        // Make canvas responsive
-        // @ts-expect-error - parentNode has getBoundingClientRect?
-        const { height, width } = canvas.parentNode?.getBoundingClientRect();
-
-        canvas.width = width;
-        canvas.height = height;
-
-        const ctx = canvas.getContext("2d")!;
-        const waveform = data.levels;
-
-        for (let x = 0; x < width; x++) {
-            if (x % 8 == 0) {
-                let idx = Math.ceil(waveform.length * (x / width));
-
-                let h = Math.round(waveform[idx]! * height) / 2;
-                ctx.globalAlpha = 0.3;
-                ctx.fillStyle = "#1c1917";
-
-                ctx.fillRect(x, height / 2 - h, 4, h);
-                ctx.fillRect(x, height / 2, 4, h);
-            }
-        }
-    };
-
     const query = createQuery<SpotifyStatus, MessageStatus>({
         queryKey: ["spotify"],
         refetchInterval: 10000,
-        onSettled: (data) => {
-            updateCanvas(data);
-        },
         queryFn: async () => {
             try {
                 const res = await fetch(import.meta.env.PUBLIC_KAORI_URL + "/api/player");
@@ -112,10 +74,6 @@
     onDestroy(() => {
         clearInterval(interval);
     });
-
-    afterUpdate(() => {
-        updateCanvas();
-    });
 </script>
 
 <div>
@@ -126,10 +84,9 @@
             <p>Error: {$query.error.message}</p>
         {:else if $query.isSuccess}
             {#if $query.data.is_playing}
-                <Player bind:canvas data={$query.data} {localProgress} />
+                <Player data={$query.data} {localProgress} />
             {:else}
                 <Player
-                    bind:canvas
                     data={{
                         song: {
                             name: "Nothing is playing",
@@ -144,7 +101,6 @@
                         progress: 0,
                         playlist_url: "https://open.spotify.com/",
                         icon: "https://cdn.danielraybone.com/assets/yin/yin-smile.gif",
-                        levels: [],
                     }}
                     localProgress={0}
                 />

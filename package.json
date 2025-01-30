@@ -12,7 +12,7 @@
     },
     "dependencies": {
         "@astrojs/svelte": "^7.0.0",
-        "@astrojs/tailwind": "^5.0.0",
+        "@astrojs/tailwind": "^6.0.0",
         "@tanstack/svelte-query": "^5.0.0",
         "astro": "^5.0.0",
         "react": "^19.0.0",

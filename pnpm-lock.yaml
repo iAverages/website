@@ -16,7 +16,7 @@ importers:
         version: 6.0.0(astro@5.2.2(jiti@2.4.2)(rollup@4.32.1)(typescript@5.7.2)(yaml@2.7.0))(tailwindcss@3.4.17)
       '@tanstack/svelte-query':
         specifier: ^5.0.0
-        version: 5.65.0(svelte@5.19.6)
+        version: 5.66.0(svelte@5.19.6)
       astro:
         specifier: ^5.0.0
         version: 5.2.2(jiti@2.4.2)(rollup@4.32.1)(typescript@5.7.2)(yaml@2.7.0)
@@ -628,11 +628,11 @@ packages:
       svelte: ^5.0.0
       vite: ^6.0.0
 
-  '@tanstack/query-core@5.65.0':
-    resolution: {integrity: sha512-Bnnq/1axf00r2grRT6gUyIkZRKzhHs+p4DijrCQ3wMlA3D3TTT71gtaSLtqnzGddj73/7X5JDGyjiSLdjvQN4w==}
+  '@tanstack/query-core@5.66.0':
+    resolution: {integrity: sha512-J+JeBtthiKxrpzUu7rfIPDzhscXF2p5zE/hVdrqkACBP8Yu0M96mwJ5m/8cPPYQE9aRNvXztXHlNwIh4FEeMZw==}
 
-  '@tanstack/svelte-query@5.65.0':
-    resolution: {integrity: sha512-udTv4cNtSvj75Af/Je0xV38eWi/7MamsdwP302ivSVO8T0mlLRWhUaT35d0wF7JqfTU1MkUMue6KjKlHroiwGw==}
+  '@tanstack/svelte-query@5.66.0':
+    resolution: {integrity: sha512-imsll2H04qoW8E8C/UWvN+YfVFov+kZyH5I7uXBNi5oKP8MyWSDgorRSTmz6MTSPE6dQJHXgYw19CZc5JZbsTA==}
     peerDependencies:
       svelte: ^3.54.0 || ^4.0.0 || ^5.0.0-next.0
 
@@ -2105,7 +2105,7 @@ snapshots:
 
   '@astrojs/svelte@7.0.4(astro@5.2.2(jiti@2.4.2)(rollup@4.32.1)(typescript@5.7.2)(yaml@2.7.0))(jiti@2.4.2)(svelte@5.19.6)(typescript@5.7.2)(yaml@2.7.0)':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 5.0.3(svelte@5.19.6)(vite@6.0.10(jiti@2.4.2)(yaml@2.7.0))
+      '@sveltejs/vite-plugin-svelte': 5.0.3(svelte@5.19.6)(vite@6.0.11(jiti@2.4.2)(yaml@2.7.0))
       astro: 5.2.2(jiti@2.4.2)(rollup@4.32.1)(typescript@5.7.2)(yaml@2.7.0)
       svelte: 5.19.6
       svelte2tsx: 0.7.34(svelte@5.19.6)(typescript@5.7.2)
@@ -2517,14 +2517,14 @@ snapshots:
 
   '@sveltejs/vite-plugin-svelte-inspector@4.0.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.6)(vite@6.0.10(jiti@2.4.2)(yaml@2.7.0)))(svelte@5.19.6)(vite@6.0.10(jiti@2.4.2)(yaml@2.7.0))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 5.0.3(svelte@5.19.6)(vite@6.0.10(jiti@2.4.2)(yaml@2.7.0))
+      '@sveltejs/vite-plugin-svelte': 5.0.3(svelte@5.19.6)(vite@6.0.11(jiti@2.4.2)(yaml@2.7.0))
       debug: 4.4.0
       svelte: 5.19.6
       vite: 6.0.10(jiti@2.4.2)(yaml@2.7.0)
     transitivePeerDependencies:
       - supports-color
 
-  '@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.6)(vite@6.0.10(jiti@2.4.2)(yaml@2.7.0))':
+  '@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.6)(vite@6.0.11(jiti@2.4.2)(yaml@2.7.0))':
     dependencies:
       '@sveltejs/vite-plugin-svelte-inspector': 4.0.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.6)(vite@6.0.10(jiti@2.4.2)(yaml@2.7.0)))(svelte@5.19.6)(vite@6.0.10(jiti@2.4.2)(yaml@2.7.0))
       debug: 4.4.0
@@ -2532,16 +2532,16 @@ snapshots:
       kleur: 4.1.5
       magic-string: 0.30.17
       svelte: 5.19.6
-      vite: 6.0.10(jiti@2.4.2)(yaml@2.7.0)
+      vite: 6.0.11(jiti@2.4.2)(yaml@2.7.0)
       vitefu: 1.0.5(vite@6.0.10(jiti@2.4.2)(yaml@2.7.0))
     transitivePeerDependencies:
       - supports-color
 
-  '@tanstack/query-core@5.65.0': {}
+  '@tanstack/query-core@5.66.0': {}
 
-  '@tanstack/svelte-query@5.65.0(svelte@5.19.6)':
+  '@tanstack/svelte-query@5.66.0(svelte@5.19.6)':
     dependencies:
-      '@tanstack/query-core': 5.65.0
+      '@tanstack/query-core': 5.66.0
       svelte: 5.19.6
 
   '@types/cookie@0.6.0': {}

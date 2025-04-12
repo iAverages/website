@@ -16,7 +16,7 @@ importers:
         version: 6.0.2(astro@5.6.1(jiti@2.4.2)(rollup@4.39.0)(typescript@5.7.2)(yaml@2.7.0))(tailwindcss@3.4.17)
       '@tanstack/svelte-query':
         specifier: ^5.0.0
-        version: 5.73.2(svelte@5.26.1)
+        version: 5.73.3(svelte@5.26.1)
       astro:
         specifier: ^5.0.0
         version: 5.6.1(jiti@2.4.2)(rollup@4.39.0)(typescript@5.7.2)(yaml@2.7.0)
@@ -643,11 +643,11 @@ packages:
       svelte: ^5.0.0
       vite: ^6.0.0
 
-  '@tanstack/query-core@5.72.2':
-    resolution: {integrity: sha512-fxl9/0yk3mD/FwTmVEf1/H6N5B975H0luT+icKyX566w6uJG0x6o+Yl+I38wJRCaogiMkstByt+seXfDbWDAcA==}
+  '@tanstack/query-core@5.73.3':
+    resolution: {integrity: sha512-LUpsgVT3IkvOECdkQ3QD6esczSH71mAzH/LDZ2cu8j6w430v5W0JB1ulzsG8FFwFBd5fm/ePM2DFpg9TucRMgQ==}
 
-  '@tanstack/svelte-query@5.73.2':
-    resolution: {integrity: sha512-4f250E39EdqwMtCidgKLM2qdHNN8otnlRwhaeJ8Re/pBOqVHGL1Rcci4HRjGQ0rZy9VD6QoOQvaxxdErMkwAzg==}
+  '@tanstack/svelte-query@5.73.3':
+    resolution: {integrity: sha512-90YScRCZT421v42pgqq+03gAEWH0cXtCjDQMmjkCW/xYg1Fvv37cmHp2X3jzv7rD/FQDi1L8dyEjpQJAldasKQ==}
     peerDependencies:
       svelte: ^3.54.0 || ^4.0.0 || ^5.0.0
 
@@ -2495,11 +2495,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@tanstack/query-core@5.72.2': {}
+  '@tanstack/query-core@5.73.3': {}
 
-  '@tanstack/svelte-query@5.73.2(svelte@5.26.1)':
+  '@tanstack/svelte-query@5.73.3(svelte@5.26.1)':
     dependencies:
-      '@tanstack/query-core': 5.72.2
+      '@tanstack/query-core': 5.73.3
       svelte: 5.26.1
 
   '@types/debug@4.1.12':

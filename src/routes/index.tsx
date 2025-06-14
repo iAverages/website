@@ -1,8 +1,11 @@
 import { formatDistanceToNow } from "date-fns";
+import ExternalLink from "~icons/lucide/external-link";
+import Github from "~icons/lucide/github";
 import { createFileRoute } from "@tanstack/solid-router";
-import { For, onMount, createSignal, Show } from "solid-js";
+import { For, Show } from "solid-js";
 import { Button } from "~/components/button";
 import { Badge } from "~/components/badge";
+import { Tooltip, TooltipContent, TooltipTrigger } from "~/components/tooltip";
 
 const getSpotify = async () => {
   const response = await fetch(
@@ -138,18 +141,25 @@ const Project = ({ project }: { project: (typeof projects)[number] }) => {
         </div>
         <div class="flex gap-2 self-end mt-4 justify-self-end">
           <a href={project.github} target="_blank" rel="noopener noreferrer">
-            <Button size="sm" variant="outline" class="cursor-pointer">
-              {/* <Github class="w-4 h-4 mr-1" /> */}
-              Code
+            <Button size="icon" variant="outline" class="cursor-pointer">
+              <Github class="w-4 h-4" />
             </Button>
           </a>
           <Show when={project.demo}>
-            <a href={project.demo} target="_blank" rel="noopener noreferrer">
-              <Button size="sm" class="cursor-pointer">
-                {/* <ExternalLink class="w-4 h-4 mr-1" /> */}
-                Demo
-              </Button>
-            </a>
+            <Tooltip openDelay={0} closeDelay={0}>
+              <TooltipTrigger>
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button size="icon" class="cursor-pointer">
+                    <ExternalLink class="w-4 h-4" />
+                  </Button>
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>view deployed demo</TooltipContent>
+            </Tooltip>
           </Show>
         </div>
       </div>

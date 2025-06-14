@@ -9,8 +9,7 @@ import {
 } from "@tanstack/solid-router";
 import { TanStackRouterDevtools } from "@tanstack/solid-router-devtools";
 import type * as Solid from "solid-js";
-import { DefaultCatchBoundary } from "~/components/DefaultCatchBoundary";
-import { NotFound } from "~/components/NotFound";
+import { DefaultErrorComponent } from "~/components/router/catch-boundary";
 import appCss from "~/styles/app.css?url";
 import { seo } from "~/utils/seo";
 
@@ -35,14 +34,13 @@ export const Route = createRootRoute({
 			{ rel: "icon", href: "/favicon.ico" },
 		],
 	}),
-	errorComponent: (props) => {
+	errorComponent: () => {
 		return (
 			<RootDocument>
-				<DefaultCatchBoundary {...props} />
+				<DefaultErrorComponent />
 			</RootDocument>
 		);
 	},
-	notFoundComponent: () => <NotFound />,
 	component: RootComponent,
 });
 

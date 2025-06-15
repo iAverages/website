@@ -1,32 +1,12 @@
-export const seo = ({
-	title,
-	description,
-	keywords,
-	image,
-}: {
-	title: string;
-	description?: string;
-	image?: string;
-	keywords?: string;
-}) => {
+export const seo = () => {
 	const tags = [
-		{ title },
-		{ name: "description", content: description },
-		{ name: "keywords", content: keywords },
-		{ name: "twitter:title", content: title },
-		{ name: "twitter:description", content: description },
-		{ name: "twitter:creator", content: "@tannerlinsley" },
-		{ name: "twitter:site", content: "@tannerlinsley" },
+		{ title: "daniel raybone" },
+		{ name: "description", content: "professional at breaking things" },
 		{ name: "og:type", content: "website" },
-		{ name: "og:title", content: title },
-		{ name: "og:description", content: description },
-		...(image
-			? [
-					{ name: "twitter:image", content: image },
-					{ name: "twitter:card", content: "summary_large_image" },
-					{ name: "og:image", content: image },
-				]
-			: []),
+		{ name: "og:title", content: "daniel raybone" },
+		{ name: "og:description", content: "professional at breaking things" },
+		{ name: "og:url", content: "https://danielraybone.com/" },
+		{ name: "og:image", content: "https://danielraybone.com/images/yin.gif" },
 	];
 
 	return tags;

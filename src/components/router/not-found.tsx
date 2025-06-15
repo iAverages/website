@@ -26,7 +26,7 @@ export const DefaultNotFoundComponent = () => {
 					</a>
 				</div>
 				<div class="fixed bottom-0 left-1/2 -translate-x-1/2">
-					<img src={"/subaru-peek.webp"} class="" />
+					<img src={"/images/subaru-peek.webp"} class="" />
 				</div>
 			</div>
 		</div>

@@ -15,6 +15,8 @@ export default defineConfig({
 
 		icons({ compiler: "solid", jsx: "react" }),
 		tailwindcss(),
-		tanstackStart({}),
+		tanstackStart({
+			target: "cloudflare-pages",
+		}),
 	],
 });

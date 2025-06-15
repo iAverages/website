@@ -5,7 +5,7 @@ import { Badge } from "~/components/badge";
 import { Button } from "~/components/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "~/components/tooltip";
 import { projects } from "~/projects";
-import { getListeningHistory } from "~/utils/machina";
+import { getListeningHistory, type Track } from "~/utils/machina";
 import ExternalLink from "~icons/lucide/external-link";
 import Github from "~icons/lucide/github";
 
@@ -46,7 +46,7 @@ function Home() {
 					</h2>
 					<div class="grid sm:grid-cols-2 gap-4">
 						<For each={recentTracks()}>
-							{(track) => <Track track={track} />}
+							{(track) => <DisplayTrack track={track} />}
 						</For>
 					</div>
 				</section>
@@ -100,7 +100,7 @@ const Project = ({ project }: { project: (typeof projects)[number] }) => {
 	);
 };
 
-const Track = ({ track }: { track: SpotifyData["data"][number] }) => {
+const DisplayTrack = ({ track }: { track: Track }) => {
 	return (
 		<a
 			href={`https://open.spotify.com/track/${track.id.split(":")[2]}`}
@@ -122,7 +122,7 @@ const Track = ({ track }: { track: SpotifyData["data"][number] }) => {
 						<h3 class="font-medium leading-none truncate">{track.name}</h3>
 
 						<span class="group-hover:opacity-100 opacity-0">
-							{/* <ExternalLink class="size-4" /> */}
+							<ExternalLink class="size-4" />
 						</span>
 					</div>
 					<p class="text-sm text-muted-foreground truncate">

@@ -2,6 +2,7 @@ export const seo = () => {
 	const tags = [
 		{ title: "daniel raybone" },
 		{ name: "description", content: "professional at breaking things" },
+		{ name: "theme-color", content: "#633194" },
 		{ name: "og:type", content: "website" },
 		{ name: "og:title", content: "daniel raybone" },
 		{ name: "og:description", content: "professional at breaking things" },

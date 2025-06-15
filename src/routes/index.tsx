@@ -4,85 +4,18 @@ import { For, Show } from "solid-js";
 import { Badge } from "~/components/badge";
 import { Button } from "~/components/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "~/components/tooltip";
+import { projects } from "~/projects";
+import { getListeningHistory } from "~/utils/machina";
 import ExternalLink from "~icons/lucide/external-link";
 import Github from "~icons/lucide/github";
 
-const getSpotify = async () => {
-	const response = await fetch(
-		"https://s.kirsi.dev/api/profile/fp0sllluqyvm69f5ukrc6buv/history",
-	);
-	const json = (await response.json()) as SpotifyData;
-	return json;
-};
-
 export const Route = createFileRoute("/")({
 	component: Home,
-	loader: getSpotify,
+	loader: getListeningHistory,
 });
 
-export type SpotifyData = {
-	cursor: number;
-	data: Array<{
-		id: string;
-		time: number;
-		name: string;
-		duration: number;
-		explicit: number;
-		artistId: string;
-		albumId: string;
-		albumName: string;
-		coverArt: string;
-		artistName: string;
-	}>;
-};
-
-const projects = [
-	{
-		title: "machina",
-		description: "tracks personal listening history with detailed analytics.",
-		tech: [
-			"solidjs",
-			"rust",
-			"bun",
-			"tanstack-start",
-			"prometheus",
-			"docker",
-			"openapi",
-		],
-		github: "https://github.com/iAverages/machina",
-		demo: "https://s.kirsi.dev/dan",
-	},
-	{
-		title: "avrg.dev",
-		description: "cloudflare worker for handling serving my image links",
-		tech: ["cloudflare-workers", "cloudflare-access", "react", "backblaze-b2"],
-		github: "https://github.com/iAverages/avrg.dev",
-	},
-	{
-		title: "mirai",
-		description: "lightweight cross-platform wallpaper manager.",
-		tech: ["rust", "nix", "cross-platform"],
-		github: "https://github.com/iAverages/mirai",
-	},
-	{
-		title: "mei",
-		description: "rust discord bot to download video links",
-		tech: ["rust", "backblaze-b2"],
-		github: "https://github.com/iAverages/mie",
-	},
-
-	{
-		title: "dotfiles",
-		description:
-			"my personal dotfiles, including nixos and neovim configurations",
-		tech: ["neovim", "nix", "nixos"],
-		github: "https://github.com/iAverages/dotfiles",
-	},
-];
-
 function Home() {
-	const spotifyData = Route.useLoaderData();
-	const recentTracks = () => spotifyData().data;
+	const recentTracks = Route.useLoaderData();
 
 	return (
 		<div class="min-h-screen bg-white dark:bg-black">

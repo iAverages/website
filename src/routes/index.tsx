@@ -41,9 +41,33 @@ function Home() {
 				</section>
 
 				<section>
-					<h2 class="text-xl font-semibold text-card-foreground mb-6">
-						recent listens
-					</h2>
+					<Tooltip
+						placement="right-start"
+						openDelay={0}
+						closeDelay={100}
+						gutter={5}
+					>
+						<TooltipTrigger>
+							<a
+								href={"https://s.kirsi.dev/dan"}
+								target="_blank"
+								rel="noopener"
+							>
+								<h2 class="text-xl font-semibold text-card-foreground mb-6 group w-fit flex gap-2 hover:text-primary">
+									recent listens
+								</h2>
+							</a>
+						</TooltipTrigger>
+						<TooltipContent>
+							<a
+								href={"https://s.kirsi.dev/dan"}
+								target="_blank"
+								rel="noopener"
+							>
+								click to view all
+							</a>
+						</TooltipContent>
+					</Tooltip>
 					<div class="grid sm:grid-cols-2 gap-4">
 						<For each={recentTracks()}>
 							{(track) => <DisplayTrack track={track} />}

@@ -1,7 +1,7 @@
 import { createRouter as createTanStackRouter } from "@tanstack/solid-router";
-import { routeTree } from "./routeTree.gen";
 import { DefaultErrorComponent } from "./components/router/catch-boundary";
 import { DefaultNotFoundComponent } from "./components/router/not-found";
+import { routeTree } from "./routeTree.gen";
 
 export function createRouter() {
 	const router = createTanStackRouter({

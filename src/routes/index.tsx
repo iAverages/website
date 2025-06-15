@@ -1,11 +1,11 @@
+import { createFileRoute } from "@tanstack/solid-router";
 import { formatDistanceToNow } from "date-fns";
+import { For, Show } from "solid-js";
+import { Badge } from "~/components/badge";
+import { Button } from "~/components/button";
+import { Tooltip, TooltipContent, TooltipTrigger } from "~/components/tooltip";
 import ExternalLink from "~icons/lucide/external-link";
 import Github from "~icons/lucide/github";
-import { createFileRoute } from "@tanstack/solid-router";
-import { For, Show } from "solid-js";
-import { Button } from "~/components/button";
-import { Badge } from "~/components/badge";
-import { Tooltip, TooltipContent, TooltipTrigger } from "~/components/tooltip";
 
 const getSpotify = async () => {
 	const response = await fetch(

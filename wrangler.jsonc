@@ -1,0 +1,15 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "website",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-06-14",
+	"compatibility_flags": ["global_fetch_strictly_public"],
+	"assets": {
+		"directory": "./public"
+	},
+	"observability": {
+		"enabled": true
+	}
+
+	// "assets": { "directory": "./public/", "binding": "ASSETS" },
+}

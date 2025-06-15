@@ -19,7 +19,7 @@ function Home() {
 
 	return (
 		<div class="min-h-screen bg-white dark:bg-black">
-			<main class="max-w-4xl mx-auto px-6 py-12 space-y-16">
+			<main class="max-w-4xl mx-auto px-3 md:px-6 py-12 space-y-16">
 				<section>
 					<h2 class="text-xl font-semibold text-card-foreground mb-4">about</h2>
 					<p class="text-muted-foreground leading-relaxed max-w-2xl">
@@ -33,7 +33,7 @@ function Home() {
 					<h2 class="text-xl font-semibold text-card-foreground mb-6">
 						projects
 					</h2>
-					<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 						{projects.map((project) => (
 							<Project project={project} />
 						))}
@@ -68,7 +68,7 @@ function Home() {
 							</a>
 						</TooltipContent>
 					</Tooltip>
-					<div class="grid sm:grid-cols-2 gap-4">
+					<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 						<For each={recentTracks()}>
 							{(track) => <DisplayTrack track={track} />}
 						</For>

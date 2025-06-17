@@ -40,4 +40,11 @@ export const projects = [
 		tech: ["neovim", "nix", "nixos"],
 		github: "https://github.com/iAverages/dotfiles",
 	},
+	{
+		title: "auto-buffer-close.nvim",
+		description:
+			'simple nvim plugin to automatically close unmodified buffers, similar to vscode "preview" mode',
+		tech: ["neovim", "lua"],
+		github: "https://github.com/iAverages/auto-buffer-close.nvim",
+	},
 ];

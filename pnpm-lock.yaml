@@ -22,7 +22,7 @@ importers:
         version: 1.121.27(@tanstack/router-core@1.121.27)(@tanstack/solid-router@1.121.27(solid-js@1.9.7))(csstype@3.1.3)(solid-js@1.9.7)(tiny-invariant@1.3.3)
       '@tanstack/solid-start':
         specifier: ^1.121.13
-        version: 1.121.31(solid-js@1.9.7)(vite-plugin-solid@2.11.6(solid-js@1.9.7)(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0)))(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))
+        version: 1.121.32(solid-js@1.9.7)(vite-plugin-solid@2.11.6(solid-js@1.9.7)(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0)))(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -49,8 +49,8 @@ importers:
         version: 3.25.67
     devDependencies:
       '@biomejs/biome':
-        specifier: 2.0.2
-        version: 2.0.2
+        specifier: 2.0.4
+        version: 2.0.4
       '@iconify-json/lucide':
         specifier: ^1.2.48
         version: 1.2.51
@@ -212,55 +212,55 @@ packages:
     resolution: {integrity: sha512-ETyHEk2VHHvl9b9jZP5IHPavHYk57EhanlRRuae9XCpb/j5bDCbPPMOBfCWhnl/7EDJz0jEMCi/RhccCE8r1+Q==}
     engines: {node: '>=6.9.0'}
 
-  '@biomejs/biome@2.0.2':
-    resolution: {integrity: sha512-IEeXplI1jwI1NJLTW4Oj0ieyVaDtyAOnpZu567qd6JCBc64HmTSlmY9j/7lWK2cmfLvGv6fS6JNClT6VobzjmQ==}
+  '@biomejs/biome@2.0.4':
+    resolution: {integrity: sha512-DNA++xe+E7UugTvI/HhzSFl6OwrVgU8SIV0Mb2fPtWPk2/oTr4eOSA5xy1JECrvgJeYxurmUBOS49qxv/OUkrQ==}
     engines: {node: '>=14.21.3'}
     hasBin: true
 
-  '@biomejs/cli-darwin-arm64@2.0.2':
-    resolution: {integrity: sha512-WvVqZsNoxj0LpeQ2cbLdadJhkOJQzNSAlvTLyv+3I+f2dzGfVYwXi287qNtKey+E6axb6r7/bGvHjkWFb52Zgg==}
+  '@biomejs/cli-darwin-arm64@2.0.4':
+    resolution: {integrity: sha512-r5McIUMMiedwJ2rltuXhj0+w0W7IJLpkOS+OGCVZQQOOcrGY9gUSUmOo7O6Z7P0vlv5YYZkPbi+qR9MDDWRBSw==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [darwin]
 
-  '@biomejs/cli-darwin-x64@2.0.2':
-    resolution: {integrity: sha512-nXSdNPJy5ufGK9EFls34lRWuecKJH4Elr1XzJ6IpK7RUv2ZnZdm5tZH285QjCbPjfshbclnMVQsZ3737VCgdLw==}
+  '@biomejs/cli-darwin-x64@2.0.4':
+    resolution: {integrity: sha512-aV5Zc/3E3aXFbrjK1IgCMEQc+6PCkBL+NS+vtjoNM2VPFeM5OL5Q82BI4YZyPnebj+k42BPIoYtz0jJ95PGRRg==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [darwin]
 
-  '@biomejs/cli-linux-arm64-musl@2.0.2':
-    resolution: {integrity: sha512-clO+uWOxNxB+7urJEnf2WDJZmUiYgeQ2Q7by7QRoyrdlgJPlf6cD5C4HNKIE81Lxp/IQeTCb9wmCmfmcLmT5Pg==}
+  '@biomejs/cli-linux-arm64-musl@2.0.4':
+    resolution: {integrity: sha512-cNukq2PthoOa7quqaKoEFz4Zd1pDPJGfTR5jVyk9Z9iFHEm6TI7+7eeIs3aYcEuuJPNFR9xhJ4Uj3E2iUWkV3A==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
 
-  '@biomejs/cli-linux-arm64@2.0.2':
-    resolution: {integrity: sha512-g8lyiOSPWldXeHF786ZoV3rgTUGnWIOMD/1trDDrLiiw5rTaGgs2i8gV3yx+5L4XCc3VM5nOhLUoRfs4uH837Q==}
+  '@biomejs/cli-linux-arm64@2.0.4':
+    resolution: {integrity: sha512-nlJhf7DyuajMj+S7Ygum59cbrHvI/nSRvedfJcEIx4X7SsiZjpRUiC5XtEn77kg7NIKq/KqG5roQIHkmjuFHCw==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
 
-  '@biomejs/cli-linux-x64-musl@2.0.2':
-    resolution: {integrity: sha512-lU96qsV96whk+cGrZtvysNbL05BFx1CtM18VOl257o2Dzb5HjKUjLuKwVRl9rnLjvuuuhNaFtsPqucPvf9chiQ==}
+  '@biomejs/cli-linux-x64-musl@2.0.4':
+    resolution: {integrity: sha512-oWQALSbp8xF0t/wiHU2zdkZOpIHyaI9QxQv0Ytty9GAKsCGP6pczp8qyKD/P49iGJdDozHp5KiuQPxs33APhyA==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
 
-  '@biomejs/cli-linux-x64@2.0.2':
-    resolution: {integrity: sha512-1sE3manPkMd24RW83dkqheEYGUc0GF3sPgd7wrqaXu4xSaCvg2fbObSnFbDTUw0NuUNmR0XhvdlczbB8hsxspQ==}
+  '@biomejs/cli-linux-x64@2.0.4':
+    resolution: {integrity: sha512-jlzrNZ+OzN9wvp2RL3cl5Y4NiV7xSU+QV5A8bWXke1on3jKy7QbXajybSjVQ6aFw1gdrqkO/W8xV5HODhIMT4g==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
 
-  '@biomejs/cli-win32-arm64@2.0.2':
-    resolution: {integrity: sha512-LkrKxh/cf5z5zGFxPNV9ZcroT2yoZE6IJ6Z+2Bq4FSKOsmqnSkeEH5tQ20Km4ERXfhOvEvJYjbTYHPHr12eGCA==}
+  '@biomejs/cli-win32-arm64@2.0.4':
+    resolution: {integrity: sha512-/PbNhMJo9ONja7hOxLlifM/qgeHpRD9bF2flTz5KIrXnQqpuegaRuwP/HYdJ9TFkTKFjHkPLoE4onOz3HIT5CQ==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [win32]
 
-  '@biomejs/cli-win32-x64@2.0.2':
-    resolution: {integrity: sha512-eI1/Ubb5BOLGwA/RNNZYyAjlhOr6K2Gk3ERQ6levG36FRZH9pK4n5Syby3fhFQzzWtEVMkFcktOHjyiwtPmiuQ==}
+  '@biomejs/cli-win32-x64@2.0.4':
+    resolution: {integrity: sha512-dIM4SgO4/Rmsb4X7fwKtciQ682SZDSC1lm42uSM9gt8zNqBIeTaqsMc6eO1DpxYWMlAb/n2SML9+HUHmCib7NA==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [win32]
@@ -1228,21 +1228,21 @@ packages:
     peerDependencies:
       solid-js: '>=1.0.0'
 
-  '@tanstack/solid-start-plugin@1.121.31':
-    resolution: {integrity: sha512-EplG8a8pf3Km3uBVPnB2maCKxY7I5JFnKeCVNZNp68Kgl9kV33UcWy8QP4T0uxFchgke8NwJIYZxF6AE6W/05Q==}
+  '@tanstack/solid-start-plugin@1.121.32':
+    resolution: {integrity: sha512-VVeeBzcCiseuUVjHIdoisOS4u4pWbl3bSsE9m+INbeTR1jsBui1mEocCDckh6bWHDD/MEMSmUCaoqNsuPU16lw==}
     engines: {node: '>=12'}
     peerDependencies:
       vite: '>=6.0.0'
       vite-plugin-solid: '>=2.11.6'
 
-  '@tanstack/solid-start-server@1.121.30':
-    resolution: {integrity: sha512-MVY5OPNuXhEg2cRDqlClcCsM43jMD0FzQbiDu+AydAdPG2ywgB8aWBC1RV4XAHdAMGS6pS/8UfROdiPOIYuLog==}
+  '@tanstack/solid-start-server@1.121.32':
+    resolution: {integrity: sha512-CfVrryoxWmemotcpLFE7s21feZZbFL62ABr/uyQVJrkhmCLCiovcno4HpSpKl5p2NmWG/5hp/MUzDMDFjuWn1g==}
     engines: {node: '>=12'}
     peerDependencies:
       solid-js: ^1.0.0
 
-  '@tanstack/solid-start@1.121.31':
-    resolution: {integrity: sha512-ylFa96ePsytceaErxJ9q0ZwHqy374c6P9bS1vX1UQE+adoks5+AMjAa1i1fEMUdbcCQksfNxUWiVTCP20TxobA==}
+  '@tanstack/solid-start@1.121.32':
+    resolution: {integrity: sha512-kie6F21SArGMWk5nQTDdwjtDClFk+kf7S6/M6ru/GSwILJG6D35fbsKtnNzkBEF9T5Uu5Cr4Oz/x/x3hUk6tSg==}
     engines: {node: '>=12'}
     peerDependencies:
       solid-js: '>=1.0.0'
@@ -1258,14 +1258,14 @@ packages:
     resolution: {integrity: sha512-sLehWjPohRlU7GvT33d5Rx/jeYsIzdJL7lCsP7vra2nscJzH72TUW/XY96mwGjD1lBXudg8JmtqoPvr3U56Oxg==}
     engines: {node: '>=12'}
 
-  '@tanstack/start-plugin-core@1.121.31':
-    resolution: {integrity: sha512-hIzSxSUCDPvAjDzNxEm6n1eP63GPih0cO0M4oTet4znyGJyITugzgOfXUKClDooX2eg8Z1kl33Bd13WtV18Rag==}
+  '@tanstack/start-plugin-core@1.121.32':
+    resolution: {integrity: sha512-r8NiKPMbTh6nXgWfbCclrFtMWWCBWz5G6c726CH1JNKZ3w2wN7e6tdInsikxWSOT0ywOrqrqePdGOqh8Nu4/RQ==}
     engines: {node: '>=12'}
     peerDependencies:
       vite: '>=6.0.0'
 
-  '@tanstack/start-server-core@1.121.30':
-    resolution: {integrity: sha512-32RK3VJJKzE7UbGstITI/tgpIqgIunxqGNAdzvJTC/tDFyjdfCuDxS0sgqSFc3kL0gtso2Lwj4Qmx3GAgMJfFg==}
+  '@tanstack/start-server-core@1.121.32':
+    resolution: {integrity: sha512-6HQvS5U50W1OnywmDGxQa622QQJo1/XuIDbkXMeNFWxai6KjhWMm6tGVLFfSGfxCoNd4tDKQlSMFM/3rmTs5Ig==}
     engines: {node: '>=12'}
 
   '@tanstack/start-server-functions-client@1.121.31':
@@ -3799,39 +3799,39 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@biomejs/biome@2.0.2':
+  '@biomejs/biome@2.0.4':
     optionalDependencies:
-      '@biomejs/cli-darwin-arm64': 2.0.2
-      '@biomejs/cli-darwin-x64': 2.0.2
-      '@biomejs/cli-linux-arm64': 2.0.2
-      '@biomejs/cli-linux-arm64-musl': 2.0.2
-      '@biomejs/cli-linux-x64': 2.0.2
-      '@biomejs/cli-linux-x64-musl': 2.0.2
-      '@biomejs/cli-win32-arm64': 2.0.2
-      '@biomejs/cli-win32-x64': 2.0.2
+      '@biomejs/cli-darwin-arm64': 2.0.4
+      '@biomejs/cli-darwin-x64': 2.0.4
+      '@biomejs/cli-linux-arm64': 2.0.4
+      '@biomejs/cli-linux-arm64-musl': 2.0.4
+      '@biomejs/cli-linux-x64': 2.0.4
+      '@biomejs/cli-linux-x64-musl': 2.0.4
+      '@biomejs/cli-win32-arm64': 2.0.4
+      '@biomejs/cli-win32-x64': 2.0.4
 
-  '@biomejs/cli-darwin-arm64@2.0.2':
+  '@biomejs/cli-darwin-arm64@2.0.4':
     optional: true
 
-  '@biomejs/cli-darwin-x64@2.0.2':
+  '@biomejs/cli-darwin-x64@2.0.4':
     optional: true
 
-  '@biomejs/cli-linux-arm64-musl@2.0.2':
+  '@biomejs/cli-linux-arm64-musl@2.0.4':
     optional: true
 
-  '@biomejs/cli-linux-arm64@2.0.2':
+  '@biomejs/cli-linux-arm64@2.0.4':
     optional: true
 
-  '@biomejs/cli-linux-x64-musl@2.0.2':
+  '@biomejs/cli-linux-x64-musl@2.0.4':
     optional: true
 
-  '@biomejs/cli-linux-x64@2.0.2':
+  '@biomejs/cli-linux-x64@2.0.4':
     optional: true
 
-  '@biomejs/cli-win32-arm64@2.0.2':
+  '@biomejs/cli-win32-arm64@2.0.4':
     optional: true
 
-  '@biomejs/cli-win32-x64@2.0.2':
+  '@biomejs/cli-win32-x64@2.0.4':
     optional: true
 
   '@cloudflare/kv-asset-handler@0.4.0':
@@ -4756,9 +4756,9 @@ snapshots:
       tiny-invariant: 1.3.3
       tiny-warning: 1.0.3
 
-  '@tanstack/solid-start-plugin@1.121.31(vite-plugin-solid@2.11.6(solid-js@1.9.7)(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0)))(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))':
+  '@tanstack/solid-start-plugin@1.121.32(vite-plugin-solid@2.11.6(solid-js@1.9.7)(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0)))(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))':
     dependencies:
-      '@tanstack/start-plugin-core': 1.121.31(vite-plugin-solid@2.11.6(solid-js@1.9.7)(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0)))(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))
+      '@tanstack/start-plugin-core': 1.121.32(vite-plugin-solid@2.11.6(solid-js@1.9.7)(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0)))(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))
       vite: 6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0)
       vite-plugin-solid: 2.11.6(solid-js@1.9.7)(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))
       zod: 3.25.67
@@ -4793,22 +4793,22 @@ snapshots:
       - webpack
       - xml2js
 
-  '@tanstack/solid-start-server@1.121.30(solid-js@1.9.7)':
+  '@tanstack/solid-start-server@1.121.32(solid-js@1.9.7)':
     dependencies:
       '@solidjs/meta': 0.29.4(solid-js@1.9.7)
       '@tanstack/history': 1.121.21
       '@tanstack/router-core': 1.121.27
       '@tanstack/solid-router': 1.121.27(solid-js@1.9.7)
       '@tanstack/start-client-core': 1.121.27
-      '@tanstack/start-server-core': 1.121.30
+      '@tanstack/start-server-core': 1.121.32
       isbot: 5.1.28
       solid-js: 1.9.7
 
-  '@tanstack/solid-start@1.121.31(solid-js@1.9.7)(vite-plugin-solid@2.11.6(solid-js@1.9.7)(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0)))(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))':
+  '@tanstack/solid-start@1.121.32(solid-js@1.9.7)(vite-plugin-solid@2.11.6(solid-js@1.9.7)(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0)))(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))':
     dependencies:
       '@tanstack/solid-start-client': 1.121.27(solid-js@1.9.7)
-      '@tanstack/solid-start-plugin': 1.121.31(vite-plugin-solid@2.11.6(solid-js@1.9.7)(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0)))(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))
-      '@tanstack/solid-start-server': 1.121.30(solid-js@1.9.7)
+      '@tanstack/solid-start-plugin': 1.121.32(vite-plugin-solid@2.11.6(solid-js@1.9.7)(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0)))(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))
+      '@tanstack/solid-start-server': 1.121.32(solid-js@1.9.7)
       '@tanstack/start-server-functions-client': 1.121.31(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))
       '@tanstack/start-server-functions-server': 1.121.31(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))
       solid-js: 1.9.7
@@ -4857,7 +4857,7 @@ snapshots:
       tiny-invariant: 1.3.3
       tiny-warning: 1.0.3
 
-  '@tanstack/start-plugin-core@1.121.31(vite-plugin-solid@2.11.6(solid-js@1.9.7)(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0)))(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))':
+  '@tanstack/start-plugin-core@1.121.32(vite-plugin-solid@2.11.6(solid-js@1.9.7)(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0)))(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))':
     dependencies:
       '@babel/code-frame': 7.26.2
       '@babel/core': 7.27.4
@@ -4867,7 +4867,7 @@ snapshots:
       '@tanstack/router-plugin': 1.121.29(vite-plugin-solid@2.11.6(solid-js@1.9.7)(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0)))(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))
       '@tanstack/router-utils': 1.121.21
       '@tanstack/server-functions-plugin': 1.121.31(vite@6.3.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))
-      '@tanstack/start-server-core': 1.121.30
+      '@tanstack/start-server-core': 1.121.32
       '@types/babel__code-frame': 7.0.6
       '@types/babel__core': 7.20.5
       babel-dead-code-elimination: 1.0.10
@@ -4911,7 +4911,7 @@ snapshots:
       - webpack
       - xml2js
 
-  '@tanstack/start-server-core@1.121.30':
+  '@tanstack/start-server-core@1.121.32':
     dependencies:
       '@tanstack/history': 1.121.21
       '@tanstack/router-core': 1.121.27

@@ -1,3 +1,4 @@
+import { createServerFn } from "@tanstack/solid-start";
 import { z } from "zod/v4-mini";
 import { trytm } from "./trytm";
 
@@ -22,9 +23,10 @@ const schema = z.object({
 export type ListeningHistory = z.infer<typeof schema>["data"];
 export type Track = ListeningHistory[number];
 
-export const getListeningHistory = async () => {
+export const getListeningHistory = createServerFn().handler(async () => {
 	const response = await fetch(
 		"https://s.kirsi.dev/api/profile/fp0sllluqyvm69f5ukrc6buv/history",
+		{ credentials: "omit" },
 	);
 	const [json, error] = await trytm(response.json());
 	if (json) {
@@ -40,4 +42,4 @@ export const getListeningHistory = async () => {
 	});
 
 	return [];
-};
+});

@@ -137,7 +137,7 @@ function RouteComponent() {
 							<For each={group}>
 								{(wallpaper) => (
 									<ImageWithLoading
-										src={wallpaper.download_url}
+										src={`/cdn-cgi/image/width=362/${wallpaper.download_url}`}
 										alt={"wallpaper"}
 									/>
 								)}

@@ -11,7 +11,7 @@ import Github from "~icons/lucide/github";
 
 export const Route = createFileRoute("/")({
 	component: Home,
-	loader: getListeningHistory,
+	loader: () => getListeningHistory(),
 });
 
 function Home() {

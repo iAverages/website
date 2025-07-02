@@ -51,7 +51,9 @@ function RootDocument({ children }: { children: Solid.JSX.Element }) {
 	return (
 		<>
 			<HeadContent />
-			<div class="dark">{children}</div>
+			<div class="dark">
+				<div class="min-h-screen bg-white dark:bg-black">{children}</div>
+			</div>
 			<TanStackRouterDevtools position="bottom-right" />
 			<Scripts />
 		</>

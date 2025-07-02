@@ -147,3 +147,12 @@
 		transform: scale(0.96);
 	}
 }
+
+.arrow-tail {
+	stroke-dasharray: 20;
+	stroke-dashoffset: 20;
+	transition: stroke-dashoffset 0.3s;
+}
+.group:hover .arrow-tail {
+	stroke-dashoffset: 0;
+}

@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/solid-router";
+import { createFileRoute, Link } from "@tanstack/solid-router";
 import { formatDistanceToNow } from "date-fns";
 import { For, Show } from "solid-js";
 import { Badge } from "~/components/badge";
@@ -18,64 +18,61 @@ function Home() {
 	const recentTracks = Route.useLoaderData();
 
 	return (
-		<div class="min-h-screen bg-white dark:bg-black">
-			<main class="max-w-4xl mx-auto px-3 md:px-6 py-12 space-y-16">
-				<section>
+		<main class="max-w-4xl mx-auto px-3 md:px-6 py-12 space-y-16">
+			<section>
+				<div class="flex justify-between">
 					<h2 class="text-xl font-semibold text-card-foreground mb-4">about</h2>
-					<p class="text-muted-foreground leading-relaxed max-w-2xl">
-						i'm dan, a software developer who writes a lot of typescript.
-						currently exploring programming with rust, learning reproducible
-						environments with nix and deploying applications using k3s.
-					</p>
-				</section>
+					<Link to="/wallpapers">
+						<p class="text-muted-foreground hover:text-card-foreground duration-200 transition-colors px-4 py-2 rounded-lg hover:bg-white/5">
+							wallpapers
+						</p>
+					</Link>
+				</div>
+				<p class="text-muted-foreground leading-relaxed max-w-2xl">
+					i'm dan, a software developer who writes a lot of typescript.
+					currently exploring programming with rust, learning reproducible
+					environments with nix and deploying applications using k3s.
+				</p>
+			</section>
 
-				<section>
-					<h2 class="text-xl font-semibold text-card-foreground mb-6">
-						projects
-					</h2>
-					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-						{projects.map((project) => (
-							<Project project={project} />
-						))}
-					</div>
-				</section>
+			<section>
+				<h2 class="text-xl font-semibold text-card-foreground mb-6">
+					projects
+				</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+					{projects.map((project) => (
+						<Project project={project} />
+					))}
+				</div>
+			</section>
 
-				<section>
-					<Tooltip
-						placement="right-start"
-						openDelay={0}
-						closeDelay={100}
-						gutter={5}
-					>
-						<TooltipTrigger>
-							<a
-								href={"https://s.kirsi.dev/dan"}
-								target="_blank"
-								rel="noopener"
-							>
-								<h2 class="text-xl font-semibold text-card-foreground mb-6 group w-fit flex gap-2 hover:text-primary">
-									recent listens
-								</h2>
-							</a>
-						</TooltipTrigger>
-						<TooltipContent>
-							<a
-								href={"https://s.kirsi.dev/dan"}
-								target="_blank"
-								rel="noopener"
-							>
-								click to view all
-							</a>
-						</TooltipContent>
-					</Tooltip>
-					<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-						<For each={recentTracks()}>
-							{(track) => <DisplayTrack track={track} />}
-						</For>
-					</div>
-				</section>
-			</main>
-		</div>
+			<section>
+				<Tooltip
+					placement="right-start"
+					openDelay={0}
+					closeDelay={100}
+					gutter={5}
+				>
+					<TooltipTrigger>
+						<a href={"https://s.kirsi.dev/dan"} target="_blank" rel="noopener">
+							<h2 class="text-xl font-semibold text-card-foreground mb-6 group w-fit flex gap-2 hover:text-primary">
+								recent listens
+							</h2>
+						</a>
+					</TooltipTrigger>
+					<TooltipContent>
+						<a href={"https://s.kirsi.dev/dan"} target="_blank" rel="noopener">
+							click to view all
+						</a>
+					</TooltipContent>
+				</Tooltip>
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+					<For each={recentTracks()}>
+						{(track) => <DisplayTrack track={track} />}
+					</For>
+				</div>
+			</section>
+		</main>
 	);
 }
 

@@ -9,8 +9,14 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as WallpapersRouteImport } from './routes/wallpapers'
 import { Route as IndexRouteImport } from './routes/index'
 
+const WallpapersRoute = WallpapersRouteImport.update({
+  id: '/wallpapers',
+  path: '/wallpapers',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +25,39 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/wallpapers': typeof WallpapersRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/wallpapers': typeof WallpapersRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/wallpapers': typeof WallpapersRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/wallpapers'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/wallpapers'
+  id: '__root__' | '/' | '/wallpapers'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  WallpapersRoute: typeof WallpapersRoute
 }
 
 declare module '@tanstack/solid-router' {
   interface FileRoutesByPath {
+    '/wallpapers': {
+      id: '/wallpapers'
+      path: '/wallpapers'
+      fullPath: '/wallpapers'
+      preLoaderRoute: typeof WallpapersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +70,7 @@ declare module '@tanstack/solid-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  WallpapersRoute: WallpapersRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -3,6 +3,8 @@ import { cn } from "~/utils/cn";
 
 export type ImageWithLoadingProps = {
 	src: string;
+	srcset?: string;
+	sizes?: string;
 	alt?: string;
 	class?: string;
 	containerClass?: string;
@@ -40,6 +42,8 @@ export function ImageWithLoading(props: ImageWithLoadingProps) {
 				<img
 					src={props.src}
 					alt={props.alt}
+					srcset={props.srcset}
+					sizes={props.sizes}
 					class={cn(
 						"object-cover transition-opacity duration-300",
 						isLoading() ? "opacity-0" : "opacity-100",

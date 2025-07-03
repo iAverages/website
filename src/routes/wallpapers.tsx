@@ -40,8 +40,10 @@ export const Route = createFileRoute("/wallpapers")({
 	onCatch: console.log,
 });
 
+const CF_TRANSFORM_BASE = `https://danielraybone.com/cdn-cgi/image/format=auto,`;
+
 const breakpointColumns = {
-	xs: 1,
+	xs: 2,
 	sm: 2,
 	md: 3,
 	lg: 4,
@@ -106,7 +108,7 @@ function RouteComponent() {
 	);
 
 	return (
-		<div class="px-6 text-white">
+		<div class="px-6 text-white max-w-[1880px] mx-auto">
 			<section class="max-w-4xl mx-auto px-3 md:px-6 py-12 space-y-16">
 				<h2 class="text-xl font-semibold text-card-foreground mb-4 flex gap-2 items-center ">
 					<Link
@@ -130,15 +132,21 @@ function RouteComponent() {
 				</p>
 			</section>
 
-			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+			<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
 				<For each={groupedImages}>
 					{(group) => (
 						<div class="flex gap-3 flex-col">
 							<For each={group}>
 								{(wallpaper) => (
 									<ImageWithLoading
-										src={`/cdn-cgi/image/width=450/${wallpaper.download_url}`}
-										alt={"wallpaper"}
+										src={`${CF_TRANSFORM_BASE}width=360/${wallpaper.download_url}`}
+										srcset={`
+											${CF_TRANSFORM_BASE}width=180/${wallpaper.download_url} 180w,
+											${CF_TRANSFORM_BASE}width=360/${wallpaper.download_url} 360w,
+											${CF_TRANSFORM_BASE}width=720/${wallpaper.download_url} 720w
+										`}
+										sizes="(max-width: 360px) 100vw, 360px"
+										alt="wallpaper"
 									/>
 								)}
 							</For>

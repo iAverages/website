@@ -14,6 +14,7 @@ export const LeftFacingArrow = (props: SvgIconProps) => (
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		class="lucide lucide-chevron-left-icon lucide-chevron-left"
+		{...props}
 	>
 		<title>left chevron</title>
 		<path d="m15 18-6-6 6-6" />

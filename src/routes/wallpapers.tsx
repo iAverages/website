@@ -139,7 +139,9 @@ function RouteComponent() {
 							<For each={group}>
 								{(wallpaper) => (
 									<ImageWithLoading
-										src={`${CF_TRANSFORM_BASE}width=360/${wallpaper.download_url}`}
+										viewLink={wallpaper.html_url}
+										downloadSrc={wallpaper.download_url}
+										src={`${CF_TRANSFORM_BASE}/${wallpaper.download_url}`}
 										srcset={`
 											${CF_TRANSFORM_BASE}width=180/${wallpaper.download_url} 180w,
 											${CF_TRANSFORM_BASE}width=360/${wallpaper.download_url} 360w,

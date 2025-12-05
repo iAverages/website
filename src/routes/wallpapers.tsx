@@ -26,8 +26,8 @@ export const Route = createFileRoute("/wallpapers")({
 	loader: async () => {
 		const response = await git.repos.getContent({
 			owner: "iAverages",
-			repo: "dotfiles",
-			path: "wallpapers",
+			repo: "wallpapers",
+			path: "anime",
 		});
 
 		const validator = wallpapersSchema.safeParse(response.data);

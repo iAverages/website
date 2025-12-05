@@ -51,8 +51,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0(@types/node@22.16.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0)
       zod:
-        specifier: 3.25.68
-        version: 3.25.68
+        specifier: 4.1.13
+        version: 4.1.13
     devDependencies:
       '@biomejs/biome':
         specifier: 2.0.6
@@ -3601,6 +3601,9 @@ packages:
 
   zod@3.25.68:
     resolution: {integrity: sha512-2APbrl2EQHZRaSvpUZNKWKAJNKwG9sNgDqmd+Y2o/C9UmsB2ClDwE9+/cfxPSkwQRV45T3XPNCrXM/scQ/0TTQ==}
+
+  zod@4.1.13:
+    resolution: {integrity: sha512-AvvthqfqrAhNH9dnfmrfKzX5upOdjUVJYFqNSlkmGf64gRaTzlPwz99IHYnVs28qYAybvAlBV+H7pn0saFY4Ig==}
 
 snapshots:
 
@@ -7415,3 +7418,5 @@ snapshots:
       readable-stream: 4.7.0
 
   zod@3.25.68: {}
+
+  zod@4.1.13: {}

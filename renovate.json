@@ -6,7 +6,9 @@
 		"group:allNonMajor",
 		":disablePeerDependencies"
 	],
-	"baseBranches": ["main"],
+	"baseBranchPatterns": [
+		"main"
+	],
 	"packageRules": [
 		{
 			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],

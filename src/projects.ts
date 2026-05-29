@@ -1,18 +1,9 @@
 export const projects = [
 	{
-		title: "machina",
-		description: "tracks personal listening history with detailed analytics.",
-		tech: [
-			"solidjs",
-			"rust",
-			"bun",
-			"tanstack-start",
-			"prometheus",
-			"docker",
-			"openapi",
-		],
-		github: "https://github.com/iAverages/machina",
-		demo: "https://s.kirsi.dev/dan",
+		title: "spqtify.com",
+		description: "spotify preview embeds, everywhere",
+		tech: ["rust", "prometheus", "docker", "effect.js", "nix", "helmchart"],
+		github: "http://github.com/iAverages/spqtify.com",
 	},
 	{
 		title: "avrg.dev",

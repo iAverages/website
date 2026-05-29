@@ -8,6 +8,7 @@ import {
 } from "@tanstack/solid-router";
 import { TanStackRouterDevtools } from "@tanstack/solid-router-devtools";
 import type * as Solid from "solid-js";
+import { HydrationScript } from "solid-js/web";
 import { DefaultErrorComponent } from "~/components/router/catch-boundary";
 import appCss from "~/styles/app.css?url";
 import { seo } from "~/utils/seo";
@@ -49,13 +50,19 @@ function RootComponent() {
 
 function RootDocument({ children }: { children: Solid.JSX.Element }) {
 	return (
-		<>
-			<HeadContent />
-			<div class="dark">
-				<div class="min-h-screen bg-white dark:bg-black">{children}</div>
-			</div>
-			<TanStackRouterDevtools position="bottom-right" />
-			<Scripts />
-		</>
+		<html lang="en">
+			<head>
+				<HydrationScript />
+			</head>
+			<body>
+				<HeadContent />
+				<HeadContent />
+				<div class="dark">
+					<div class="min-h-screen bg-white dark:bg-black">{children}</div>
+				</div>
+				<TanStackRouterDevtools position="bottom-right" />
+				<Scripts />
+			</body>
+		</html>
 	);
 }

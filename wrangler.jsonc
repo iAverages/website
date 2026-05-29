@@ -1,9 +1,9 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "website",
-	"main": "src/index.ts",
+	"main": "@tanstack/solid-start/server-entry",
 	"compatibility_date": "2025-06-14",
-	"compatibility_flags": ["global_fetch_strictly_public"],
+	"compatibility_flags": ["nodejs_compat"],
 	"assets": {
 		"directory": "./public"
 	},

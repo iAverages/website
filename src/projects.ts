@@ -38,4 +38,12 @@ export const projects = [
 		tech: ["neovim", "lua"],
 		github: "https://github.com/iAverages/auto-buffer-close.nvim",
 	},
-];
+] satisfies Project[];
+
+export type Project = {
+	title: string;
+	description: string;
+	tech: [string, ...string[]];
+	github: string;
+	demo?: string;
+};

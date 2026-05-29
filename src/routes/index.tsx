@@ -3,7 +3,7 @@ import { Show } from "solid-js";
 import { Badge } from "~/components/badge";
 import { Button } from "~/components/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "~/components/tooltip";
-import { projects } from "~/projects";
+import { type Project, projects } from "~/projects";
 import ExternalLink from "~icons/lucide/external-link";
 import Github from "~icons/lucide/github";
 
@@ -36,7 +36,7 @@ function Home() {
 				</h2>
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 					{projects.map((project) => (
-						<Project project={project} />
+						<ProjectCard project={project} />
 					))}
 				</div>
 			</section>
@@ -44,7 +44,7 @@ function Home() {
 	);
 }
 
-const Project = ({ project }: { project: (typeof projects)[number] }) => {
+const ProjectCard = ({ project }: { project: Project }) => {
 	return (
 		<div class="rounded-lg h-full border bg-card flex flex-col text-card-foreground shadow-smborder border-gray-200 dark:border-neutral-900 hover:shadow-md transition-shadow">
 			<div class="flex flex-col space-y-1.5 p-6">

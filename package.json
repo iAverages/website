@@ -12,7 +12,7 @@
 		"@kobalte/core": "0.13.12",
 		"@octokit/rest": "22.0.1",
 		"@solid-primitives/intersection-observer": "2.2.5",
-		"@tailwindcss/vite": "4.3.2",
+		"@tailwindcss/vite": "4.3.3",
 		"@tanstack/solid-router": "1.170.18",
 		"@tanstack/solid-router-devtools": "1.167.0",
 		"@tanstack/solid-start": "1.168.28",
@@ -21,7 +21,7 @@
 		"solid-js": "1.9.14",
 		"tailwind-merge": "3.6.0",
 		"unplugin-icons": "23.0.1",
-		"vite": "8.1.4",
+		"vite": "8.1.5",
 		"zod": "4.4.3"
 	},
 	"devDependencies": {
@@ -30,7 +30,7 @@
 		"@iconify-json/lucide": "1.2.117",
 		"@types/node": "25.9.5",
 		"@typescript/native-preview": "7.0.0-dev.20260707.2",
-		"tailwindcss": "4.3.2",
+		"tailwindcss": "4.3.3",
 		"typescript": "6.0.3",
 		"vite-plugin-solid": "2.11.12",
 		"wrangler": "^4.95.0"

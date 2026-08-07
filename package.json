@@ -15,7 +15,7 @@
 		"@tailwindcss/vite": "4.3.3",
 		"@tanstack/solid-router": "1.170.22",
 		"@tanstack/solid-router-devtools": "1.167.1",
-		"@tanstack/solid-start": "1.168.38",
+		"@tanstack/solid-start": "1.168.39",
 		"class-variance-authority": "0.7.1",
 		"clsx": "2.1.1",
 		"solid-js": "1.9.14",

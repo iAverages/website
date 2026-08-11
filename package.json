@@ -9,13 +9,13 @@
 		"start": "vite start"
 	},
 	"dependencies": {
-		"@kobalte/core": "0.13.12",
+		"@kobalte/core": "0.13.13",
 		"@octokit/rest": "22.0.1",
 		"@solid-primitives/intersection-observer": "2.2.5",
 		"@tailwindcss/vite": "4.3.3",
-		"@tanstack/solid-router": "1.170.23",
+		"@tanstack/solid-router": "1.170.24",
 		"@tanstack/solid-router-devtools": "1.167.1",
-		"@tanstack/solid-start": "1.168.40",
+		"@tanstack/solid-start": "1.168.41",
 		"class-variance-authority": "0.7.1",
 		"clsx": "2.1.1",
 		"solid-js": "1.9.14",
@@ -26,8 +26,8 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.5.7",
-		"@cloudflare/vite-plugin": "1.51.1",
-		"@iconify-json/lucide": "1.2.122",
+		"@cloudflare/vite-plugin": "1.51.2",
+		"@iconify-json/lucide": "1.2.123",
 		"@types/node": "25.9.5",
 		"@typescript/native-preview": "7.0.0-dev.20260707.2",
 		"tailwindcss": "4.3.3",

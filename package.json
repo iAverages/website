@@ -9,7 +9,7 @@
 		"start": "vite start"
 	},
 	"dependencies": {
-		"@kobalte/core": "0.13.13",
+		"@kobalte/core": "0.13.14",
 		"@octokit/rest": "22.0.1",
 		"@solid-primitives/intersection-observer": "2.2.5",
 		"@tailwindcss/vite": "4.3.3",
@@ -26,8 +26,8 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.5.12",
-		"@cloudflare/vite-plugin": "1.54.4",
-		"@iconify-json/lucide": "1.2.129",
+		"@cloudflare/vite-plugin": "1.54.6",
+		"@iconify-json/lucide": "1.2.130",
 		"@types/node": "25.9.5",
 		"@typescript/native-preview": "7.0.0-dev.20260707.2",
 		"tailwindcss": "4.3.3",

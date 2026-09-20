@@ -27,7 +27,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "2.5.14",
 		"@cloudflare/vite-plugin": "1.56.0",
-		"@iconify-json/lucide": "1.2.134",
+		"@iconify-json/lucide": "1.2.135",
 		"@types/node": "25.9.8",
 		"@typescript/native-preview": "7.0.0-dev.20260707.2",
 		"tailwindcss": "4.3.3",

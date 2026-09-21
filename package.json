@@ -15,7 +15,7 @@
 		"@tailwindcss/vite": "4.3.3",
 		"@tanstack/solid-router": "1.170.36",
 		"@tanstack/solid-router-devtools": "1.167.2",
-		"@tanstack/solid-start": "1.168.54",
+		"@tanstack/solid-start": "1.168.55",
 		"class-variance-authority": "0.7.1",
 		"clsx": "2.1.1",
 		"solid-js": "1.9.15",
@@ -26,7 +26,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.5.14",
-		"@cloudflare/vite-plugin": "1.56.0",
+		"@cloudflare/vite-plugin": "1.57.1",
 		"@iconify-json/lucide": "1.2.135",
 		"@types/node": "25.9.8",
 		"@typescript/native-preview": "7.0.0-dev.20260707.2",

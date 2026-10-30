@@ -28,7 +28,7 @@
 		"@biomejs/biome": "2.6.4",
 		"@cloudflare/vite-plugin": "1.66.0",
 		"@iconify-json/lucide": "1.2.149",
-		"@types/node": "25.9.9",
+		"@types/node": "26.6.6",
 		"@typescript/native-preview": "7.0.0-dev.20260707.2",
 		"tailwindcss": "4.3.3",
 		"typescript": "7.0.2",

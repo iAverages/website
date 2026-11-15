@@ -18,21 +18,21 @@
 		"@tanstack/solid-start": "1.169.5",
 		"class-variance-authority": "0.7.1",
 		"clsx": "2.1.1",
-		"solid-js": "1.9.18",
+		"solid-js": "1.9.19",
 		"tailwind-merge": "3.7.0",
 		"unplugin-icons": "23.0.1",
-		"vite": "8.3.7",
+		"vite": "8.3.8",
 		"zod": "4.6.7"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.6.6",
-		"@cloudflare/vite-plugin": "1.68.0",
-		"@iconify-json/lucide": "1.2.152",
+		"@biomejs/biome": "2.6.8",
+		"@cloudflare/vite-plugin": "1.69.1",
+		"@iconify-json/lucide": "1.2.155",
 		"@types/node": "25.9.9",
 		"@typescript/native-preview": "7.0.0-dev.20260707.2",
 		"tailwindcss": "4.3.5",
 		"typescript": "7.0.2",
-		"vite-plugin-solid": "2.11.15",
+		"vite-plugin-solid": "2.11.16",
 		"wrangler": "^4.95.0"
 	}
 }

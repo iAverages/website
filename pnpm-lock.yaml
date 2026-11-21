@@ -15,8 +15,8 @@ importers:
         specifier: 22.0.1
         version: 22.0.1
       '@solid-primitives/intersection-observer':
-        specifier: 2.2.5
-        version: 2.2.5(solid-js@1.9.19)
+        specifier: 3.0.0
+        version: 3.0.0(@solidjs/web@2.0.3(solid-js@1.9.19))(solid-js@1.9.19)
       '@tailwindcss/vite':
         specifier: 4.3.5
         version: 4.3.5(vite@8.3.8(@types/node@25.9.9)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))
@@ -1043,10 +1043,11 @@ packages:
     peerDependencies:
       solid-js: ^1.6.12
 
-  '@solid-primitives/intersection-observer@2.2.5':
-    resolution: {integrity: sha512-mhlQETWaS4jjVBBmfFUsUSih5eSqVdYD7bDAjwmhxEAy1bydKTiaCn8g3ARQB1jM/92qyxTcOvTCpPoMIOkaPA==}
+  '@solid-primitives/intersection-observer@3.0.0':
+    resolution: {integrity: sha512-rKRftRNAFcVYWjoo7sub9iCRJbOXqBBcLwa0coclb5y34u9QQ0pTjOQTZ0qqb6Wd0prnC2Gx5uYMlNW5Ep8kfg==}
     peerDependencies:
-      solid-js: ^1.6.12
+      '@solidjs/web': ^2.0.0
+      solid-js: ^2.0.0
 
   '@solid-primitives/keyed@1.5.3':
     resolution: {integrity: sha512-zNadtyYBhJSOjXtogkGHmRxjGdz9KHc8sGGVAGlUABkE8BED2tbIZoxkwSqzOwde8OcUEH0bb5DLZUWIMvyBSA==}
@@ -1098,10 +1099,22 @@ packages:
     peerDependencies:
       solid-js: ^1.6.12
 
+  '@solid-primitives/utils@7.0.1':
+    resolution: {integrity: sha512-g5gcdsAF/lI2Pa/U+Hrj4FzE2CUCQiu7QCFcNrmX8jAPJvf8qOOYEA3DjcHHUCcIW2HSo9T5MEXkfYdZ9m5J4w==}
+    peerDependencies:
+      '@solidjs/web': ^2.0.0
+      solid-js: ^2.0.0
+
   '@solidjs/meta@0.29.4':
     resolution: {integrity: sha512-zdIWBGpR9zGx1p1bzIPqF5Gs+Ks/BH8R6fWhmUa/dcK1L2rUC8BAcZJzNRYBQv74kScf1TSOs0EY//Vd/I0V8g==}
     peerDependencies:
       solid-js: '>=1.8.4'
+
+  '@solidjs/web@2.0.3':
+    resolution: {integrity: sha512-XYl9JGOtQ8yJSZRnd6uC+5gYXsYvnIRNxhn89m+F1v6D4d4ZFdTJY2Lq/8XJ3YcjckkCrK/mNfd3kIiqqgnG7w==}
+    engines: {node: '>=22.12.0'}
+    peerDependencies:
+      solid-js: ^2.0.3
 
   '@speed-highlight/core@1.2.16':
     resolution: {integrity: sha512-yNm/fYEcnpRjYduLMaddTK9XKYil6xB88+qFg79ZdZhHu1PadfoQmFW7pVTx7FZqMBNcUuThiAhxhENgtAO2/w==}
@@ -1940,6 +1953,12 @@ packages:
     peerDependencies:
       seroval: ^1.0
 
+  seroval-plugins@1.8.0:
+    resolution: {integrity: sha512-96vBb12rDvPPwdKUgWw1op3fGq8AVBFOr0IllbnM72yR5J9WWXF18cQ4g1XfDO7HCyh2dt70P3XdtyRayP8FWg==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      seroval: ^1.8.0
+
   seroval@1.6.12:
     resolution: {integrity: sha512-CqbIVfk/7GL3ITwZI55lcPbpQbjHZ2DD5cUj4iH7E9YsCfHNJV1mx7yNp86Z84w5IpmkZZS/2s5vPOWmVWSdQg==}
     engines: {node: '>=10'}
@@ -1947,6 +1966,10 @@ packages:
   seroval@1.6.8:
     resolution: {integrity: sha512-HlSgSAkTk4EqHcje1ptJjfZi1YDv5KbhVJ/d3P7T/nAXua2VmDu+AKDX5VTdFfZf48nDkWB2TKYt0DrCSa+3wg==}
     engines: {node: '>=10'}
+
+  seroval@1.8.2:
+    resolution: {integrity: sha512-zmMxi/9MdLK1MKazLmIP6Rk39RuK0Xydd+QHeOYntS37olJeTjB3+nwVj4ce/ZWiZJeRhcO5htfxt0mUzQBscQ==}
+    engines: {node: '>=20'}
 
   sharp@0.35.5:
     resolution: {integrity: sha512-Ywn4OnzGukp7CDMrp08RQ50YKmuwG47brZgIVPTvBaaAfQlRlygrRqSrxdCiL9M+LlzLBiJ68IR1QqvzHyjC7g==}
@@ -2962,9 +2985,10 @@ snapshots:
       '@solid-primitives/utils': 6.4.1(solid-js@1.9.19)
       solid-js: 1.9.19
 
-  '@solid-primitives/intersection-observer@2.2.5(solid-js@1.9.19)':
+  '@solid-primitives/intersection-observer@3.0.0(@solidjs/web@2.0.3(solid-js@1.9.19))(solid-js@1.9.19)':
     dependencies:
-      '@solid-primitives/utils': 6.4.1(solid-js@1.9.19)
+      '@solid-primitives/utils': 7.0.1(@solidjs/web@2.0.3(solid-js@1.9.19))(solid-js@1.9.19)
+      '@solidjs/web': 2.0.3(solid-js@1.9.19)
       solid-js: 1.9.19
 
   '@solid-primitives/keyed@1.5.3(solid-js@1.9.19)':
@@ -3021,8 +3045,20 @@ snapshots:
     dependencies:
       solid-js: 1.9.19
 
+  '@solid-primitives/utils@7.0.1(@solidjs/web@2.0.3(solid-js@1.9.19))(solid-js@1.9.19)':
+    dependencies:
+      '@solidjs/web': 2.0.3(solid-js@1.9.19)
+      solid-js: 1.9.19
+
   '@solidjs/meta@0.29.4(solid-js@1.9.19)':
     dependencies:
+      solid-js: 1.9.19
+
+  '@solidjs/web@2.0.3(solid-js@1.9.19)':
+    dependencies:
+      csstype: 3.2.3
+      seroval: 1.8.2
+      seroval-plugins: 1.8.0(seroval@1.8.2)
       solid-js: 1.9.19
 
   '@speed-highlight/core@1.2.16': {}
@@ -3846,9 +3882,15 @@ snapshots:
     dependencies:
       seroval: 1.6.8
 
+  seroval-plugins@1.8.0(seroval@1.8.2):
+    dependencies:
+      seroval: 1.8.2
+
   seroval@1.6.12: {}
 
   seroval@1.6.8: {}
+
+  seroval@1.8.2: {}
 
   sharp@0.35.5(@types/node@25.9.9):
     dependencies:

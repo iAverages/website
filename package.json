@@ -14,25 +14,25 @@
 		"@solid-primitives/intersection-observer": "2.2.5",
 		"@tailwindcss/vite": "4.3.5",
 		"@tanstack/solid-router": "1.170.43",
-		"@tanstack/solid-router-devtools": "1.167.3",
-		"@tanstack/solid-start": "1.169.5",
+		"@tanstack/solid-router-devtools": "1.167.4",
+		"@tanstack/solid-start": "1.169.7",
 		"class-variance-authority": "0.7.1",
 		"clsx": "2.1.1",
-		"solid-js": "1.9.19",
-		"tailwind-merge": "3.7.0",
+		"solid-js": "1.9.20",
+		"tailwind-merge": "3.7.1",
 		"unplugin-icons": "23.0.1",
 		"vite": "8.3.8",
 		"zod": "4.6.7"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.6.8",
-		"@cloudflare/vite-plugin": "1.69.1",
-		"@iconify-json/lucide": "1.2.155",
+		"@cloudflare/vite-plugin": "1.70.1",
+		"@iconify-json/lucide": "1.2.158",
 		"@types/node": "25.9.9",
 		"@typescript/native-preview": "7.0.0-dev.20260707.2",
 		"tailwindcss": "4.3.5",
 		"typescript": "7.0.2",
-		"vite-plugin-solid": "2.11.16",
+		"vite-plugin-solid": "2.11.17",
 		"wrangler": "^4.95.0"
 	}
 }

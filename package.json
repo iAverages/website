@@ -25,10 +25,10 @@
 		"zod": "4.6.7"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.6.8",
+		"@biomejs/biome": "2.6.9",
 		"@cloudflare/vite-plugin": "1.70.1",
-		"@iconify-json/lucide": "1.2.158",
-		"@types/node": "25.9.9",
+		"@iconify-json/lucide": "1.2.159",
+		"@types/node": "25.9.10",
 		"@typescript/native-preview": "7.0.0-dev.20260707.2",
 		"tailwindcss": "4.3.5",
 		"typescript": "7.0.2",

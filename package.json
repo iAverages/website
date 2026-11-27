@@ -21,14 +21,14 @@
 		"solid-js": "1.9.20",
 		"tailwind-merge": "3.7.1",
 		"unplugin-icons": "23.0.1",
-		"vite": "8.3.8",
+		"vite": "8.4.0",
 		"zod": "4.6.7"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.6.9",
-		"@cloudflare/vite-plugin": "1.70.1",
-		"@iconify-json/lucide": "1.2.159",
-		"@types/node": "25.9.10",
+		"@cloudflare/vite-plugin": "1.70.2",
+		"@iconify-json/lucide": "1.2.160",
+		"@types/node": "25.9.12",
 		"@typescript/native-preview": "7.0.0-dev.20260707.2",
 		"tailwindcss": "4.3.5",
 		"typescript": "7.0.2",
